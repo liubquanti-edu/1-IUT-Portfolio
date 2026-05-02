@@ -1,0 +1,26 @@
+@import '../../styles/colors.css';
+
+.section {
+  width: 100%;
+}
+
+/* Padding variants */
+.section-p-sm {
+  padding: 2rem 0;
+}
+
+.section-p-md {
+  padding: 3rem 0;
+}
+
+.section-p-lg {
+  padding: 4rem 0;
+}
+
+.section-p-xl {
+  padding: 6rem 0;
+}
+
+.section-p-none {
+  padding: 0;
+}
