@@ -11,13 +11,19 @@
 .cv-preview-container {
   width: 100%;
   height: 600px;
-  border: 1px solid var(--color-border-medium);
+  border: 2px solid var(--color-border-medium);
   border-radius: 0.4rem;
   overflow: hidden;
   background-color: var(--color-bg-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.cv-preview {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .cv-preview-placeholder {

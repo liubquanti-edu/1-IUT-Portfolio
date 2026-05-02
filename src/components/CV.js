@@ -36,17 +36,11 @@ function CV() {
         <div className="cv-wrapper">
           {/* Left side - PDF Preview Placeholder */}
           <div className="cv-preview-container">
-            <div className="cv-preview-placeholder">
-              <div className="cv-icon-wrapper">
-                <TbFileTypePdf className="cv-icon" />
-              </div>
-              <h3 className="cv-placeholder-title">Oleh Liubchenko CV</h3>
-              <p className="cv-placeholder-text">Curriculum Vitae en format PDF</p>
-              <p className="cv-placeholder-meta">Mis à jour: Janvier 2026</p>
-              <button className="cv-preview-button" onClick={handleOpenCV}>
-                <TbExternalLink /> Ouvrir dans un nouvel onglet
-              </button>
-            </div>
+            <iframe
+              src={cvPath}
+              title="CV Preview"
+              className="cv-preview"
+            ></iframe>
           </div>
 
           {/* Right side - Content and Actions */}
