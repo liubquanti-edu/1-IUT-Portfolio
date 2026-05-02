@@ -29,6 +29,7 @@
   color: var(--color-text-primary);
   font-family: 'Noto Sans Mono', monospace;
   flex-shrink: 0;
+  text-decoration: none;
 }
 
 .logo-icon {

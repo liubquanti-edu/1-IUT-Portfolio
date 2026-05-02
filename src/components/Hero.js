@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import { Button, Heading, Text, Section, Container } from './UI';
+import { TbCode, TbAffiliate, TbUxCircle } from 'react-icons/tb';
 
 const Hero = () => {
   return (
@@ -8,10 +9,10 @@ const Hero = () => {
       <Container size="lg" className="hero-container">
         <div className="hero-content">
           <Text variant="subtitle" color="tertiary" size="md">
-            Oleh Liubchenko
+            La polyvalence, c'est une attitude
           </Text>
           <Heading level={1} color="primary">
-            La polyvalence,<br />c'est une attitude
+            Oleh Liubchenko
           </Heading>
           <Text variant="body" color="secondary" size="md">
             Étudiant en 1ère année de BUT Réseaux et Télécommunications.
@@ -35,10 +36,16 @@ const Hero = () => {
             />
           </div>
           <div className="geometric-elements">
-            <div className="shape shape-1"></div>
+            <div className="shape shape-1">
+                <TbUxCircle size={24} className='shape-icon'/>
+            </div>
             <div className="shape shape-2"></div>
-            <div className="shape shape-3"></div>
-            <div className="shape shape-4"></div>
+            <div className="shape shape-3">
+                <TbCode size={24} className='shape-icon'/>
+            </div>
+            <div className="shape shape-4">
+                <TbAffiliate size={24} className='shape-icon'/>
+            </div>
             <div className="shape shape-5"></div>
             <div className="grid-pattern"></div>
           </div>

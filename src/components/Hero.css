@@ -109,6 +109,12 @@
   background-color: var(--color-shape-fill-accent);
 }
 
+.shape-icon {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
 .grid-pattern {
   position: absolute;
   width: 100%;
