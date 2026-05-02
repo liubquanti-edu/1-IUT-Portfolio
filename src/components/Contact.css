@@ -3,8 +3,8 @@
 .contact-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: flex-start;
+  gap: 3rem;
+  align-items: center;
 }
 
 /* Left side - Content */

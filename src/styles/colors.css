@@ -27,7 +27,7 @@
   --color-shape-border: #333333;
   --color-shape-fill: rgba(100, 100, 100, 0.1);
   --color-shape-fill-accent: rgba(100, 100, 100, 0.15);
-  --color-grid-pattern: rgba(100, 100, 100, 0.1);
+  --color-grid-pattern: rgba(100, 100, 100, 0.5);
   
   /* Shadows */
   --color-shadow-light: rgba(0, 0, 0, 0.5);

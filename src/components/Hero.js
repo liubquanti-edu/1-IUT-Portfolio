@@ -37,14 +37,23 @@ const Hero = () => {
           </div>
           <div className="geometric-elements">
             <div className="shape shape-1">
-                <TbUxCircle size={24} className='shape-icon'/>
+                <TbUxCircle size={24} strokeWidth={1} className='shape-icon'/>
+                <Text variant="caption" color="tertiary" size="sm" className="shape-label">
+                    UI/UX
+                </Text>
             </div>
             <div className="shape shape-2"></div>
             <div className="shape shape-3">
-                <TbCode size={24} className='shape-icon'/>
+                <TbCode size={24} strokeWidth={1} className='shape-icon'/>
+                <Text variant="caption" color="tertiary" size="sm" className="shape-label">
+                    Code
+                </Text>
             </div>
             <div className="shape shape-4">
-                <TbAffiliate size={24} className='shape-icon'/>
+                <TbAffiliate size={24} strokeWidth={1} className='shape-icon'/>
+                <Text variant="caption" color="tertiary" size="sm" className="shape-label">
+                    Réseaux
+                </Text>
             </div>
             <div className="shape shape-5"></div>
             <div className="grid-pattern"></div>
