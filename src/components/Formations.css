@@ -98,4 +98,11 @@
   .formations-image {
     height: 280px;
   }
+
+  .formations-grid-pattern {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
