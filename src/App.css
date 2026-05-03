@@ -9,3 +9,8 @@ html {
   min-height: 100vh;
   background-color: var(--color-bg-primary);
 }
+
+::selection {
+    color: var(--color-bg-primary);
+    background: var(--color-text-primary);
+}
