@@ -92,7 +92,17 @@
 
 @media (max-width: 768px) {
   .competences-wrapper {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .competences-image {
+    order: 2;
+  }
+
+  .competences-content {
+    order: 1;
   }
 
   .competences-image {

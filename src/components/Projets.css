@@ -92,7 +92,17 @@
 
 @media (max-width: 768px) {
   .projets-wrapper {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .projets-image {
+    order: 2;
+  }
+
+  .projets-content {
+    order: 1;
   }
 
   .projets-image {

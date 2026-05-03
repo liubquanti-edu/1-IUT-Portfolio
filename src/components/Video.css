@@ -44,15 +44,21 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-
-  .video-player-container {
-    order: -1;
-  }
 }
 
 @media (max-width: 768px) {
   .video-wrapper {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .video-player-container {
+    order: 2;
+  }
+
+  .video-content {
+    order: 1;
   }
 
   .video-content {

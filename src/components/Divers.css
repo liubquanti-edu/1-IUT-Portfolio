@@ -92,7 +92,17 @@
 
 @media (max-width: 768px) {
   .divers-wrapper {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .divers-image {
+    order: 2;
+  }
+
+  .divers-content {
+    order: 1;
   }
 
   .divers-image {

@@ -155,7 +155,17 @@
 
 @media (max-width: 768px) {
   .cv-wrapper {
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .cv-preview-container {
+    order: 2;
+  }
+
+  .cv-content {
+    order: 1;
   }
 
   .cv-preview-container {

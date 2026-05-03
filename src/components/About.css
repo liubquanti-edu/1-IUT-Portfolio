@@ -98,8 +98,17 @@
 
 @media (max-width: 768px) {
   .about-wrapper {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+  }
+
+  .about-image {
+    order: 2;
+  }
+
+  .about-content {
+    order: 1;
   }
 
   .about-image {
