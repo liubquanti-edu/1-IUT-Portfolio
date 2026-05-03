@@ -25,3 +25,13 @@
 .section-p-none {
   padding: 0;
 }
+
+@media (max-width: 768px) {
+  .section {
+    scroll-margin-top: 65px;
+  }
+
+  .section-p-lg {
+    padding: 2rem 0;
+  }
+}
