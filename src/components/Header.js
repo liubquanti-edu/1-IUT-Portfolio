@@ -26,6 +26,8 @@ const Header = () => {
           <a href="#about" className="nav-link" onClick={closeMenu}>À propos</a>
           <a href="#formations" className="nav-link" onClick={closeMenu}>Formations</a>
           <a href="#competences" className="nav-link" onClick={closeMenu}>Compétences</a>
+          <a href="#projets" className="nav-link" onClick={closeMenu}>Projets</a>
+          <a href="#divers" className="nav-link" onClick={closeMenu}>Divers</a>
           <a href="#video" className="nav-link" onClick={closeMenu}>Vidéo</a>
           <a href="#cv" className="nav-link" onClick={closeMenu}>CV</a>
           <a href="#contact" className="nav-link" onClick={closeMenu}>Contact</a>

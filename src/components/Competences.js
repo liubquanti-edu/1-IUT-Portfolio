@@ -2,7 +2,7 @@ import React from 'react';
 import './Competences.css';
 import { Container, Heading, Section } from './UI';
 import Banner from './UI/Banner';
-import { TbUsers, TbCode } from 'react-icons/tb';
+import { TbUsers, TbCode, TbLanguage, TbSettingsCog } from 'react-icons/tb';
 
 const Competences = () => {
   return (
@@ -27,15 +27,19 @@ const Competences = () => {
 
             <div className="competences-banners">
               <Banner
+                logo={<TbSettingsCog />}
+                title="Techniques"
+                subtitle="Développement, Programmation"
+              />
+              <Banner
+                logo={<TbLanguage />}
+                title="Langues"
+                subtitle="Français, Anglais"
+              />
+              <Banner
                 logo={<TbUsers />}
                 title="Humaines"
                 subtitle="Communication, Travail en équipe"
-              />
-
-              <Banner
-                logo={<TbCode />}
-                title="Techniques"
-                subtitle="Développement, Programmation"
               />
             </div>
           </div>
