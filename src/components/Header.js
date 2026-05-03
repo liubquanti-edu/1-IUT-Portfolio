@@ -24,10 +24,11 @@ const Header = () => {
 
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <a href="#about" className="nav-link" onClick={closeMenu}>À propos</a>
+          <a href="#formations" className="nav-link" onClick={closeMenu}>Formations</a>
+          <a href="#competences" className="nav-link" onClick={closeMenu}>Compétences</a>
           <a href="#video" className="nav-link" onClick={closeMenu}>Vidéo</a>
           <a href="#cv" className="nav-link" onClick={closeMenu}>CV</a>
           <a href="#contact" className="nav-link" onClick={closeMenu}>Contact</a>
-          <Button variant="secondary" size="md" className="nav-button">Me contacter</Button>
         </nav>
 
         <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">

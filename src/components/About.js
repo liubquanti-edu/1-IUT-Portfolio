@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import { Container, Heading, Text, Button, Section } from './UI';
+import { Container, Heading, Text, Section } from './UI';
 
 const About = () => {
   return (
