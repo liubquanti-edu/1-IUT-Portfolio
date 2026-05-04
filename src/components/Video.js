@@ -13,7 +13,7 @@ function Video() {
               Capsule vidéo
             </Heading>
             <Text variant="body" color="secondary">
-              Découvrez qui je suis à travers cette courte présentation vidéo. Je vous parle de mes passions, de mes objectifs et de ce qui me pousse à apprendre et à me développer continuellement dans le domaine de l'informatique. Cette vidéo vous donnera une meilleure compréhension de ma personnalité et de ma vision professionnelle.
+              Ma capsules vidéo porte sur ma première année d'études à la BUT Réseaux et Télécommunications. J'y parle de mes études, des raisons pour lesquelles j'ai choisi cet établissement et de ce qui me plaît ici, des compétences que j'ai acquises et de l'objectif de mon projet professionnel.
             </Text>
           </div>
 
