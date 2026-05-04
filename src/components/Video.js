@@ -19,7 +19,7 @@ function Video() {
 
           {/* Right side - Video Player */}
           <div className="video-player-container">
-            <video
+            <video 
               className="video-player"
               controls
               poster="assets/images/capsule.png"
