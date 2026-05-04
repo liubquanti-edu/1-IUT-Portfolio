@@ -42,7 +42,6 @@
   z-index: 1;
   width: 550px;
   height: 550px;
-  border-radius: 10px;
   overflow: hidden;
 
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent),

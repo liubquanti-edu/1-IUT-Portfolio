@@ -70,7 +70,6 @@
   color: var(--color-text-primary);
   text-decoration: none;
   transition: all 0.3s ease;
-  border-radius: 0.4rem;
 }
 
 .social-icon-link svg {

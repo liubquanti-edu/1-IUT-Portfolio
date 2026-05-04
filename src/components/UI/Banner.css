@@ -12,7 +12,6 @@
   padding: 1rem 1.25rem;
   background-color: var(--color-bg-secondary);
   border: 2px solid var(--color-border-medium);
-  border-radius: 0.75rem;
   color: var(--color-text-primary);
   text-align: left;
   cursor: pointer;
