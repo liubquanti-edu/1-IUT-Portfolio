@@ -22,7 +22,7 @@ const Hero = () => {
               Me contacter
             </Button>
             <Button variant="secondary" size="md">
-              Voir mes projets
+              Voir mon CV
             </Button>
           </div>
         </div>

@@ -325,6 +325,8 @@
   align-items: center;
   justify-content: center;
   aspect-ratio: 1000 / 721;
+  border: 2px solid var(--color-border-medium);
+  padding: 5px;
 }
 
 .diploma-image img {

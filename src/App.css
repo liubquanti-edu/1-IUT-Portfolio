@@ -8,7 +8,7 @@ html {
 
 /* Scrollbar styling */
 html::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 html::-webkit-scrollbar-track {
@@ -17,7 +17,6 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
   background-color: var(--color-border-medium);
-  border-radius: 4px;
 }
 
 html::-webkit-scrollbar-thumb:hover {

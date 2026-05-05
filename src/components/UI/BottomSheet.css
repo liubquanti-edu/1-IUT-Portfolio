@@ -141,7 +141,6 @@
 
 .bottom-sheet-body::-webkit-scrollbar-thumb {
   background-color: var(--color-border-medium);
-  border-radius: 3px;
 }
 
 .bottom-sheet-body::-webkit-scrollbar-thumb:hover {
