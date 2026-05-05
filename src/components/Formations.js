@@ -107,12 +107,10 @@ const Formations = () => {
         <BottomSheet
           isOpen={!!selectedFormation}
           onClose={() => setSelectedFormation(null)}
-          title=""
+          title={selectedFormation.title}
         >
           <div className="formation-modal-wrapper">
             <div className="formation-modal-content">
-              <h2 className="formation-modal-title">{selectedFormation.title}</h2>
-
               <div className="formation-info-grid">
                 <div className="formation-info-item">
                   <span className="formation-info-label">Année</span>

@@ -78,7 +78,7 @@ const BottomSheet = ({ isOpen, onClose, title, children }) => {
         >
           <div className="bottom-sheet-content" ref={contentRef}>
             <div className="bottom-sheet-handle">
-              <div></div>
+              {title && <h2 className="bottom-sheet-title">{title}</h2>}
               <button
                 className="bottom-sheet-close"
                 onClick={handleClose}
@@ -87,8 +87,6 @@ const BottomSheet = ({ isOpen, onClose, title, children }) => {
                 <TbX />
               </button>
             </div>
-
-            {title && <h2 className="bottom-sheet-title">{title}</h2>}
 
             <div className="bottom-sheet-body">{children}</div>
           </div>
