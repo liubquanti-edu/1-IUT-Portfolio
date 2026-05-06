@@ -8,7 +8,7 @@ import Button from './UI/Button';
 import { TbFileTypePdf, TbDownload, TbPrinter, TbExternalLink } from 'react-icons/tb';
 
 function CV() {
-  const cvPath = '/assets/docs/Oleh_Liubchenko_CV_IUT.pdf';
+  const cvPath = '/assets/docs/Oleh_Liubchenko_CV.pdf';
 
   const handleOpenCV = () => {
     window.open(cvPath, '_blank');
