@@ -49,7 +49,7 @@ const Formations = () => {
         {
           id: 2,
           image: 'assets/images/education/spec.png',
-          description: 'Certificat attestant l\'obtention du diplôme professionnel d\'opérateur en saisie informatique.',
+          description: 'Diplôme professionnel d\'opérateur en saisie informatique.',
           downloadUrl: 'assets/docs/Certificate_of_awarding_improving_of_trade_qualification_P23021438.pdf',
           downloadName: 'Certificate_of_awarding_improving_of_trade_qualification_P23021438.pdf',
         },
