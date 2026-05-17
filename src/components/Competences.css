@@ -58,7 +58,7 @@
   display: flex;
   flex-direction: row;
   gap: 6px;
-  margin: 0.25rem 0 0 0;
+  margin-top: auto;
   align-items: center;
   width: 100%;
 }
@@ -196,7 +196,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 891px) {
   .languages-row {
     flex-direction: column;
     overflow-x: visible;
@@ -214,8 +214,6 @@
     order: 0;
     flex-direction: row;
     gap: 6px;
-    margin-right: 0;
-    margin-bottom: 0.25rem;
   }
 
   .level-block {
