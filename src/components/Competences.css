@@ -7,6 +7,85 @@
   align-items: center;
 }
 
+.languages-and-diplomas {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.languages-block {
+  background: var(--color-bg-secondary);
+  padding: 1rem;
+  border: 2px solid var(--color-border-medium);
+}
+
+.languages-row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.language-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  background: transparent;
+  flex: 1 1 16%;
+  min-width: 140px;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.language-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-name {
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.language-note {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.language-level {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  margin: 0.25rem 0 0 0;
+  align-items: center;
+  width: 100%;
+}
+
+.level-block {
+  flex: 1 1 0;
+  height: 10px;
+  background: var(--color-bg-primary);
+  border: 1px solid var(--color-border-medium);
+  opacity: 0.25;
+}
+
+.level-block--active {
+  background: var(--color-text-primary);
+  opacity: 1;
+}
+
+.diplomas-block {
+  margin-top: 0.5rem;
+}
+
+.competences-diplomas-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .competences-image {
   position: relative;
   height: 420px;
@@ -114,5 +193,33 @@
     left: 0;
     right: 0;
     bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .languages-row {
+    flex-direction: column;
+    overflow-x: visible;
+    gap: 0;
+  }
+
+  .language-item {
+    min-width: auto;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .language-level {
+    order: 0;
+    flex-direction: row;
+    gap: 6px;
+    margin-right: 0;
+    margin-bottom: 0.25rem;
+  }
+
+  .level-block {
+    width: 18px;
+    height: 10px;
   }
 }

@@ -1,10 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Competences.css';
 import { Container, Heading, Section } from './UI';
 import Banner from './UI/Banner';
 import { TbUsers, TbCode, TbLanguage, TbSettingsCog } from 'react-icons/tb';
+import BottomSheet from './UI/BottomSheet';
+import { TbDownload } from 'react-icons/tb';
 
 const Competences = () => {
+  const [openSheet, setOpenSheet] = useState(null);
+
+  const languages = [
+    { id: 'uk', name: 'Ukrainien', note: 'Langue maternelle', level: 6 },
+    { id: 'ru', name: 'Russe', note: 'Deuxième langue', level: 6 },
+    { id: 'fr', name: 'Français', note: 'B2 — Intermédiaire supérieur', level: 4 },
+    { id: 'en', name: 'Anglais', note: 'B2 — Intermédiaire supérieur', level: 4 },
+    { id: 'de', name: 'Allemand', note: 'A1 — Débutant', level: 1 },
+  ];
+
+  const diplomas = [
+    {
+      id: 1,
+      image: 'assets/images/education/dup.png',
+      description: 'Diplôme universitaire passerelle B2 en français.',
+      downloadUrl: 'assets/docs/DUP_B2.pdf',
+      downloadName: 'DUP_B2.pdf',
+    },
+    {
+      id: 2,
+      image: 'assets/images/education/eng.png',
+      description: 'Certificat de compétence en anglais B2.',
+      downloadUrl: 'assets/docs/English_B2.pdf',
+      downloadName: 'English_B2.pdf',
+    },
+  ];
+
+  const openLanguages = () => setOpenSheet('langues');
+  const closeSheet = () => setOpenSheet(null);
+
   return (
     <Section padding="lg" id="competences">
       <Container size="lg">
@@ -35,6 +67,7 @@ const Competences = () => {
                 logo={<TbLanguage />}
                 title="Langues"
                 subtitle="Français, Anglais"
+                onClick={openLanguages}
               />
               <Banner
                 logo={<TbUsers />}
@@ -45,6 +78,61 @@ const Competences = () => {
           </div>
         </div>
       </Container>
+      {openSheet === 'langues' && (
+        <BottomSheet isOpen={true} onClose={closeSheet} title="Langues">
+          <div className="languages-and-diplomas">
+            <div className="languages-block">
+              <div className="languages-row">
+                {languages.map((lang) => (
+                  <div key={lang.id} className="language-item">
+                    <div className="language-meta">
+                      <div className="language-name">{lang.name}</div>
+                      <div className="language-note">{lang.note}</div>
+                    </div>
+
+                    <div className="language-level">
+                      {lang.level === 6 ? (
+                        <div className={`level-block level-block--active level-block--full`} />
+                      ) : (
+                        Array.from({ length: 6 }).map((_, i) => (
+                          <div
+                            key={i}
+                            className={`level-block ${i < lang.level ? 'level-block--active' : ''}`}
+                          />
+                        ))
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="competences-diplomas-section">
+              <h3 className="formation-section-heading">Diplômes</h3>
+              <div className="diplomas-scroll">
+                {diplomas.map((d) => (
+                  <div key={d.id} className="diploma-card">
+                    <div className="diploma-image">
+                      <img src={d.image} alt={d.description} />
+                    </div>
+                    <p className="diploma-description">{d.description}</p>
+                    <a
+                      href={d.downloadUrl}
+                      download={d.downloadName}
+                      className="diploma-download-link"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <TbDownload />
+                      Télécharger
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </BottomSheet>
+      )}
     </Section>
   );
 };

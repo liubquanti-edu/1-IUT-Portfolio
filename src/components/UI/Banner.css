@@ -15,13 +15,12 @@
   color: var(--color-text-primary);
   text-align: left;
   cursor: pointer;
-  transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .banner:hover {
   border-color: var(--color-border-light);
   background-color: rgba(34, 34, 34, 0.95);
-  transform: translateY(-1px);
 }
 
 .banner-logo {
