@@ -110,34 +110,50 @@ const Formations = () => {
           title={selectedFormation.title}
         >
           <div className="formation-modal-wrapper">
-            <div className="formation-modal-content">
+            <div className="formation-modal-media-wrapper">
               <div className="formation-info-grid">
-                <div className="formation-info-item">
-                  <span className="formation-info-label">Année</span>
-                  <span className="formation-info-value">
-                    {selectedFormation.year}
-                  </span>
-                </div>
-                <div className="formation-info-item">
-                  <span className="formation-info-label">Obtention du diplôme</span>
-                  <span className="formation-info-value">
-                    {selectedFormation.diplomaStatus}
-                  </span>
-                </div>
-                <div className="formation-info-item">
-                  <span className="formation-info-label">Formation</span>
-                  <span className="formation-info-value">
-                    {selectedFormation.formation}
-                  </span>
-                </div>
-                <div className="formation-info-item">
-                  <span className="formation-info-label">Statut de l'étudiant</span>
-                  <span className="formation-info-value">
-                    {selectedFormation.studentStatus}
-                  </span>
-                </div>
+              <div className="formation-info-item">
+                <span className="formation-info-label">Année</span>
+                <span className="formation-info-value">
+                  {selectedFormation.year}
+                </span>
+              </div>
+              <div className="formation-info-item">
+                <span className="formation-info-label">Obtention du diplôme</span>
+                <span className="formation-info-value">
+                  {selectedFormation.diplomaStatus}
+                </span>
+              </div>
+              <div className="formation-info-item">
+                <span className="formation-info-label">Formation</span>
+                <span className="formation-info-value">
+                  {selectedFormation.formation}
+                </span>
+              </div>
+              <div className="formation-info-item">
+                <span className="formation-info-label">Statut de l'étudiant</span>
+                <span className="formation-info-value">
+                  {selectedFormation.studentStatus}
+                </span>
+              </div>
               </div>
 
+              <div className="formation-modal-media">
+                <div className="formation-modal-image">
+                  <div className="formation-modal-image-wrapper">
+                    <img
+                      src={selectedFormation.cover}
+                      alt={selectedFormation.title}
+                      className="formation-modal-logo"
+                    />
+                  </div>
+
+                  <div className="formation-modal-grid-pattern"></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="formation-modal-content">
               <h3 className="formation-section-heading">Objectif de la Formation</h3>
               <p className="formation-text">{selectedFormation.objectif}</p>
 
@@ -146,22 +162,11 @@ const Formations = () => {
               </h3>
               <p className="formation-text">{selectedFormation.pourquoi}</p>
             </div>
-
-            <div className="formation-modal-image">
-              <div className="formation-modal-image-wrapper">
-                <img
-                  src={selectedFormation.cover}
-                  alt={selectedFormation.title}
-                  className="formation-modal-logo"
-                />
-              </div>
-              <div className="formation-modal-grid-pattern"></div>
-            </div>
           </div>
 
           {selectedFormation.diplomas && selectedFormation.diplomas.length > 0 && (
             <div className="formation-diplomas-section">
-              <h3 className="formation-section-heading">Diplômes obtenus</h3>
+              <h3 className="formation-section-heading formation-section-heading-new-line">Diplômes obtenus</h3>
 
               <div className="diplomas-scroll">
                 {selectedFormation.diplomas.map((diploma) => (
