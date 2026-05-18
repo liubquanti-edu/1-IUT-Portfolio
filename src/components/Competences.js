@@ -17,6 +17,13 @@ const Competences = () => {
     { id: 'de', name: 'Allemand', note: 'A1 — Débutant', level: 1 },
   ];
 
+  const humaines = [
+    { id: 1, title: 'Polyvalence', description: 'Je m\'efforce d\'être polyvalent afin de mieux comprendre mon domaine.' },
+    { id: 2, title: 'Adaptabilité', description: 'En m\'organisant, je m\'adapte simplement à différentes conditions.' },
+    { id: 3, title: 'Organisation', description: 'J\'organise clairement ma vie et je suis toujours là où je dois être.' },
+    { id: 4, title: 'Patience', description: 'Je peaufine mon travail jusqu\'à ce qu\'il réponde aux exigences.' },
+  ];
+
   const diplomas = [
     {
       id: 1,
@@ -35,6 +42,7 @@ const Competences = () => {
   ];
 
   const openLanguages = () => setOpenSheet('langues');
+  const openHumaines = () => setOpenSheet('humaines');
   const closeSheet = () => setOpenSheet(null);
 
   return (
@@ -73,6 +81,7 @@ const Competences = () => {
                 logo={<TbUsers />}
                 title="Humaines"
                 subtitle="Communication, Travail en équipe"
+                onClick={openHumaines}
               />
             </div>
           </div>
@@ -130,6 +139,18 @@ const Competences = () => {
                 ))}
               </div>
             </div>
+          </div>
+        </BottomSheet>
+      )}
+      {openSheet === 'humaines' && (
+        <BottomSheet isOpen={true} onClose={closeSheet} title="Compétences Humaines">
+          <div className="humaines-block">
+            {humaines.map((skill) => (
+              <div key={skill.id} className="humaine-item">
+                <h3 className="humaine-title">{skill.title}</h3>
+                <p className="humaine-description">{skill.description}</p>
+              </div>
+            ))}
           </div>
         </BottomSheet>
       )}

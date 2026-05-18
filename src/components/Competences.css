@@ -221,3 +221,53 @@
     height: 10px;
   }
 }
+
+/* Humaines Skills */
+.humaines-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.humaine-item {
+  background-color: var(--color-bg-secondary);
+  padding: 1.5rem;
+  border: 2px solid var(--color-border-medium);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.humaine-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.humaine-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .humaines-block {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .humaine-item {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .humaine-title {
+    font-size: 1rem;
+  }
+
+  .humaine-description {
+    font-size: 0.9rem;
+  }
+}

@@ -150,10 +150,15 @@
     top: 60px;
   }
 
+  .bottom-sheet-handle {
+    padding: 1rem;
+  }
+
   .bottom-sheet-title {
     font-size: 1.25rem;
     margin-bottom: 1rem;
-    padding: 0 1rem;
+
+  
   }
 
   .bottom-sheet-body {
