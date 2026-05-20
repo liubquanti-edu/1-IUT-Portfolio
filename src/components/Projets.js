@@ -18,19 +18,19 @@ const Projets = () => {
               <Banner
                 logo={<TbUxCircle />}
                 title="UI/UX"
-                subtitle="Design d'interfaces"
+                subtitle="Designs d'interface construits"
               />
 
               <Banner
                 logo={<TbAffiliate />}
                 title="Réseaux"
-                subtitle="Télécommunications"
+                subtitle="Systèmes de communication réalisés"
               />
 
               <Banner
                 logo={<TbCode />}
                 title="Code"
-                subtitle="Développement logiciel"
+                subtitle="Logiciels développés"
               />
             </div>
           </div>

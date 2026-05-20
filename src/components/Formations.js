@@ -29,10 +29,10 @@ const Formations = () => {
       logo: 'assets/images/facility/pppc.png',
       cover: 'assets/images/facility/pppc-bat.jpg',
       title: 'Collège professionnel polytechnique de Poltava',
-      subtitle: 'Développement de logiciels',
+      subtitle: 'BTS Développement de logiciels',
       year: '2021 - 2025',
       diplomaStatus: 'Obtenu',
-      formation: 'Développement de logiciels',
+      formation: 'BTS Développement de logiciels',
       studentStatus: 'Diplômé',
       objectif:
         'La formation en Développement de Logiciels au sein du CPP est un cursus d\'études supérieures qui prépare les étudiants à devenir des techniciens compétents dans le domaine du logiciel. Accessible après le baccalauréat, cette formation couvre les fondamentaux de la programmation, de la conception, du développement et de la maintenance de logiciels.',

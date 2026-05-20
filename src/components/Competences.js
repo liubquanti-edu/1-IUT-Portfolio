@@ -69,18 +69,18 @@ const Competences = () => {
               <Banner
                 logo={<TbSettingsCog />}
                 title="Techniques"
-                subtitle="Développement, Programmation"
+                subtitle="Savoir faire"
               />
               <Banner
                 logo={<TbLanguage />}
                 title="Langues"
-                subtitle="Français, Anglais"
+                subtitle="Savoir communiquer"
                 onClick={openLanguages}
               />
               <Banner
                 logo={<TbUsers />}
                 title="Humaines"
-                subtitle="Communication, Travail en équipe"
+                subtitle="Savoir être"
                 onClick={openHumaines}
               />
             </div>
