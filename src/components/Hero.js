@@ -4,6 +4,14 @@ import { Button, Heading, Text, Section, Container } from './UI';
 import { TbCode, TbAffiliate, TbUxCircle } from 'react-icons/tb';
 
 const Hero = () => {
+  const handleContactClick = () => {
+    window.location.href = 'mailto:oleh.liubchenko@etu.uca.fr';
+  };
+
+  const handleCvClick = () => {
+    window.open('/assets/docs/Oleh_Liubchenko_CV.pdf', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <Section padding="none" className="hero-section">
       <Container size="lg" className="hero-container">
@@ -18,10 +26,10 @@ const Hero = () => {
             Étudiant en 1ère année de BUT Réseaux et Télécommunications.
           </Text>
           <div className="hero-buttons">
-            <Button variant="primary" size="md">
+            <Button variant="primary" size="md" onClick={handleContactClick}>
               Me contacter
             </Button>
-            <Button variant="secondary" size="md">
+            <Button variant="secondary" size="md" onClick={handleCvClick}>
               Voir mon CV
             </Button>
           </div>
