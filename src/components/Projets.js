@@ -23,6 +23,7 @@ import {
   TbLetterC,
   TbDeviceGamepad2,
   TbScript,
+  TbDeviceMobile,
 } from 'react-icons/tb';
 import BottomSheet from './UI/BottomSheet';
 
@@ -41,31 +42,32 @@ const Projets = () => {
         {
           id: 'uiux-1',
           title: 'White Design',
-          summary: 'Interface d\'administration sobre pour un service SaaS.',
-          image: 'assets/images/phone.png',
+          summary: 'Un système de design monochrome propriétaire, conçu pour mes projets.',
+          image: 'assets/images/projects/whitedesign.png',
           tags: [
             { id: 'ui', label: 'UI', icon: <TbPalette /> },
             { id: 'ux', label: 'UX', icon: <TbLayout /> },
-            { id: 'web', label: 'Web', icon: <TbDeviceDesktop /> },
+            { id: 'mobile', label: 'Mobile', icon: <TbDeviceMobile /> },
           ],
-          context: 'Créer une interface claire et rapide pour la gestion des utilisateurs.',
-          objective: 'Simplifier la navigation et réduire le temps d\'exécution des tâches.',
-          work: 'Wireframes, prototypes, design system, tests utilisateurs.',
-          result: 'Interface livrée avec 40% de clics en moins pour les actions clés.',
+          context: 'Lors du développement de l\'application mobile White Cobalt, j\'ai souhaité créer un système de conception propriétaire qui puisse se démarquer tout en s\'adaptant à la philosophie des systèmes d\'exploitation sur lesquels l\'application serait utilisée.',
+          objective: 'Il faut concevoir l\'interface graphique d\'une application destinée à fonctionner sous le système d\'exploitation Android.',
+          work: 'J\'ai créé un système de conception qui a été utilisé dans l\'application mobile White Cobalt et qui est devenu le système de conception principal pour mes projets mobiles.',
+          result: 'J\'ai perfectionné mes compétences en matière de conception de systèmes de design propriétaires et d\'utilisation du logiciel Figma.',
         },
         {
           id: 'uiux-2',
-          title: 'Application Mobile Étudiants',
-          summary: 'Expérience mobile orientée planning et suivi pédagogique.',
-          image: 'assets/images/hardware.png',
+          title: 'Redessin de MyUCA',
+          summary: 'Amélioration de l\'interface de l\'application mobile MyUCA destinée aux étudiants.',
+          image: 'assets/images/projects/myuca.png',
           tags: [
-            { id: 'mobile', label: 'Mobile', icon: <TbDeviceDesktop /> },
+            { id: 'ui', label: 'UI', icon: <TbPalette /> },
             { id: 'ux', label: 'UX', icon: <TbLayout /> },
+            { id: 'mobile', label: 'Mobile', icon: <TbDeviceMobile /> },
           ],
-          context: 'Concevoir une app simple pour suivre cours et devoirs.',
-          objective: 'Réduire la friction et améliorer l\'engagement étudiant.',
-          work: 'Personas, parcours, maquettes hi-fi, itérations.',
-          result: 'Prototype validé avec 92% de satisfaction.',
+          context: 'L\'application mobile MyUCA permet aux étudiants d\'accéder à des informations sur leur vie étudiante, telles que les horaires de cours, les adresses des bibliothèques, des restaurants universitaires et bien plus encore, mais son design est obsolète, ce qui rend son utilisation peu pratique.',
+          objective: 'Il est nécessaire d\'améliorer la conception de l\'application MyUCA afin qu\'elle réponde aux normes actuelles en matière de design et offre une interface conviviale à l\'utilisateur.',
+          work: 'J\'ai mis en œuvre une nouvelle conception de l\'interface de l\'application MyUCA ; cette nouvelle conception a amélioré la convivialité de l\'application, a permis de disposer les nouvelles fonctionnalités dans un ordre logique et a conservé le style de l\'infrastructure numérique de l\'UCA.',
+          result: 'J\'ai perfectionné mes compétences en matière de conception de systèmes de design propriétaires et d\'utilisation du logiciel Figma.',
         },
       ],
     },
@@ -189,14 +191,10 @@ const Projets = () => {
   const handleOpenProject = (categoryId, project) => {
     setSelectedProject(project);
     setLastCategory(categoryId);
-    setActiveCategory(null);
   };
 
   const handleCloseProject = () => {
     setSelectedProject(null);
-    if (lastCategory) {
-      setActiveCategory(lastCategory);
-    }
   };
 
   const activeCategoryData = projectCategories.find((cat) => cat.id === activeCategory);
