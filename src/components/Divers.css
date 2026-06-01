@@ -107,8 +107,8 @@
 }
 
 .hobby-card-image {
-  width: 7rem;
-  height: 7rem;
+  height: 15rem;
+  aspect-ratio: 1 / 1;
   flex-shrink: 0;
   overflow: hidden;
   border: 2px solid var(--color-border-medium);
@@ -126,7 +126,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  justify-content: center;
 }
 
 .hobby-card-title {
@@ -203,7 +202,7 @@
 .interets-sheet {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1rem;
   font-family: 'Noto Sans Mono', monospace;
 }
 
