@@ -2,7 +2,16 @@ import React, { useState } from 'react';
 import './Competences.css';
 import { Container, Heading, Section } from './UI';
 import Banner from './UI/Banner';
-import { TbUsers, TbCode, TbLanguage, TbSettingsCog } from 'react-icons/tb';
+import {
+  TbUsers,
+  TbCode,
+  TbLanguage,
+  TbSettingsCog,
+  TbStackBackward,
+  TbArrowsShuffle,
+  TbChecklist,
+  TbHourglass,
+} from 'react-icons/tb';
 import BottomSheet from './UI/BottomSheet';
 import { TbDownload } from 'react-icons/tb';
 
@@ -18,10 +27,30 @@ const Competences = () => {
   ];
 
   const humaines = [
-    { id: 1, title: 'Polyvalence', description: 'Je m\'efforce d\'être polyvalent afin de mieux comprendre mon domaine.' },
-    { id: 2, title: 'Adaptabilité', description: 'En m\'organisant, je m\'adapte simplement à différentes conditions.' },
-    { id: 3, title: 'Organisation', description: 'J\'organise clairement ma vie et je suis toujours là où je dois être.' },
-    { id: 4, title: 'Patience', description: 'Je peaufine mon travail jusqu\'à ce qu\'il réponde aux exigences.' },
+    {
+      id: 1,
+      title: 'Polyvalence',
+      description: 'Je m\'efforce d\'être polyvalent afin de mieux comprendre mon domaine.',
+      icon: <TbStackBackward />,
+    },
+    {
+      id: 2,
+      title: 'Adaptabilité',
+      description: 'En m\'organisant, je m\'adapte simplement à différentes conditions.',
+      icon: <TbArrowsShuffle />,
+    },
+    {
+      id: 3,
+      title: 'Organisation',
+      description: 'J\'organise clairement ma vie et je suis toujours là où je dois être.',
+      icon: <TbChecklist />,
+    },
+    {
+      id: 4,
+      title: 'Patience',
+      description: 'Je peaufine mon travail jusqu\'à ce qu\'il réponde aux exigences.',
+      icon: <TbHourglass />,
+    },
   ];
 
   const diplomas = [
@@ -147,8 +176,11 @@ const Competences = () => {
           <div className="humaines-block">
             {humaines.map((skill) => (
               <div key={skill.id} className="humaine-item">
-                <h3 className="humaine-title">{skill.title}</h3>
-                <p className="humaine-description">{skill.description}</p>
+                <div className="humaine-icon">{skill.icon}</div>
+                <div className="humaine-content">
+                  <h3 className="humaine-title">{skill.title}</h3>
+                  <p className="humaine-description">{skill.description}</p>
+                </div>
               </div>
             ))}
           </div>
