@@ -151,16 +151,10 @@ const InterestCarousel = ({ category, items, onItemClick }) => (
         >
           <div className="interest-card-image">
             <img src={item.cover} alt={item.title} />
-            <div className="interest-card-overlay">
-              <span className="interest-card-label">{item.title}</span>
-            </div>
           </div>
-          {index === 0 && (
             <div className="interest-card-info">
-              <span className="interest-card-badge">Favori</span>
               <span className="interest-card-name">{item.title}</span>
             </div>
-          )}
         </button>
       ))}
     </div>
