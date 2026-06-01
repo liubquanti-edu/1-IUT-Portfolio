@@ -243,7 +243,10 @@ const Divers = () => {
               />
               <div className="hobby-sheet-grid-pattern"></div>
             </div>
-            <p className="hobby-sheet-description">{selectedHobby.description}</p>
+            <div className="hobby-sheet-content">
+              <h3 className="hobby-sheet-heading">Pourquoi j'aime</h3>
+              <p className="hobby-sheet-description">{selectedHobby.description}</p>
+            </div>
           </div>
         </BottomSheet>
       )}
