@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Formations.css';
-import { Container, Heading, Section, BottomSheet } from './UI';
+import { Container, Heading, Section, BottomSheet, Button } from './UI';
 import Banner from './UI/Banner';
 import { TbDownload } from 'react-icons/tb';
 
@@ -18,6 +18,8 @@ const Formations = () => {
       diplomaStatus: 'En cours',
       formation: 'BUT Réseaux et Télécommunications',
       studentStatus: '1ère année',
+      officialUrl: 'https://iut.uca.fr/',
+      detailUrl: 'https://iut.uca.fr/formations/but-reseaux-et-telecommunications',
       objectif:
         'Le BUT Réseaux et Télécommunications est une formation en 3 ans, accessible après le baccalauréat. Cette formation vise à former des techniciens supérieurs compétents dans les domaines des réseaux informatiques, des télécommunications et de la cybersécurité.',
       pourquoi:
@@ -34,6 +36,8 @@ const Formations = () => {
       diplomaStatus: 'Obtenu',
       formation: 'BTS Développement de logiciels',
       studentStatus: 'Diplômé',
+      officialUrl: 'https://sites.google.com/polytechnic.co.cc/main',
+      detailUrl: 'https://sites.google.com/polytechnic.co.cc/main/%D0%B0%D0%B1%D1%96%D1%82%D1%83%D1%80%D1%96%D1%94%D0%BD%D1%82%D0%B0%D0%BC/%D0%BE%D0%B3%D0%BB%D1%8F%D0%B4-%D1%81%D0%BF%D0%B5%D1%86%D1%96%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9#h.ho48gail8chq',
       objectif:
         'La formation en Développement de Logiciels au sein du CPP est un cursus d\'études supérieures qui prépare les étudiants à devenir des techniciens compétents dans le domaine du logiciel. Accessible après le baccalauréat, cette formation couvre les fondamentaux de la programmation, de la conception, du développement et de la maintenance de logiciels.',
       pourquoi:
@@ -66,6 +70,10 @@ const Formations = () => {
 
   const handleFormationClick = (formation) => {
     setSelectedFormation(formation);
+  };
+
+  const handleOpenLink = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -154,6 +162,24 @@ const Formations = () => {
             </div>
 
             <div className="formation-modal-content">
+              <div className="formation-links">
+                <Button
+                  variant="primary"
+                  size="md"
+                  className="formation-link-button"
+                  onClick={() => handleOpenLink(selectedFormation.officialUrl)}
+                >
+                  Site officiel
+                </Button>
+                <Button
+                  variant="secondary"
+                  size="md"
+                  className="formation-link-button formation-link-button--secondary"
+                  onClick={() => handleOpenLink(selectedFormation.detailUrl)}
+                >
+                  Formation detaillee
+                </Button>
+              </div>
               <h3 className="formation-section-heading">Objectif de la Formation</h3>
               <p className="formation-text">{selectedFormation.objectif}</p>
 
