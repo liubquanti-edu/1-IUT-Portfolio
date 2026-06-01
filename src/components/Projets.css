@@ -140,11 +140,12 @@
   font-family: 'Noto Sans Mono', monospace;
   cursor: pointer;
   text-align: left;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .project-card:hover {
   border-color: var(--color-border-light);
+  background-color: rgba(34, 34, 34, 0.95);
 }
 
 .project-card-image {
