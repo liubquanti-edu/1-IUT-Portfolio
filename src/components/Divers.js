@@ -11,7 +11,7 @@ const hobbies = [
     id: 1,
     image: 'assets/images/hobby/gr.png',
     title: 'Graphisme informatique',
-    summary: 'Passionné de graphisme, j\'explore les techniques de design et de création numérique.',
+    summary: 'Création de visuels et de vidéos pour le plaisir.',
     description:
       'J\'aime beaucoup le design graphique et le montage vidéo. J\'utilise principalement les logiciels Adobe Photoshop, Adobe Illustrator et Adobe Premiere Pro pour créer des visuels et des vidéos de qualité.',
   },
@@ -19,7 +19,7 @@ const hobbies = [
     id: 2,
     image: 'assets/images/hobby/os.png',
     title: 'Recherche sur les systèmes d\'exploitation',
-    summary: 'Passionné de mécanique, de design et de culture automobile.',
+    summary: 'Étudier les OS, leur architecture et leur interface.',
     description:
       'J\'aime étudier les systèmes d\'exploitation, l\'architecture des logiciels développés pour eux, la conception et la philosophie de leur interface, ainsi que le fonctionnement du système d\'exploitation sur différents matériels.',
   },
@@ -27,7 +27,7 @@ const hobbies = [
     id: 3,
     image: 'assets/images/hobby/hw.png',
     title: 'Recherche sur le matériel informatique',
-    summary: 'Créer des interfaces, des jeux et des outils par plaisir.',
+    summary: 'Étudier le matériel informatique et ses propriétés.',
     description:
       'J\'aime étudier le matériel informatique et ses propriétés, ainsi que son fonctionnement dans différentes conditions.',
   },
