@@ -6,10 +6,6 @@ import {
   TbCode,
   TbAffiliate,
   TbUxCircle,
-  TbDeviceDesktop,
-  TbDatabase,
-  TbCloud,
-  TbNetwork,
   TbBolt,
   TbShieldCheck,
   TbPalette,
@@ -30,7 +26,6 @@ import BottomSheet from './UI/BottomSheet';
 const Projets = () => {
   const [activeCategory, setActiveCategory] = useState(null);
   const [selectedProject, setSelectedProject] = useState(null);
-  const [lastCategory, setLastCategory] = useState(null);
 
   const projectCategories = [
     {
@@ -166,7 +161,6 @@ const Projets = () => {
 
   const handleOpenCategory = (categoryId) => {
     setActiveCategory(categoryId);
-    setLastCategory(categoryId);
   };
 
   const handleCloseCategory = () => {
@@ -175,7 +169,6 @@ const Projets = () => {
 
   const handleOpenProject = (categoryId, project) => {
     setSelectedProject(project);
-    setLastCategory(categoryId);
   };
 
   const handleCloseProject = () => {

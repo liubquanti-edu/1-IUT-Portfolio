@@ -11,19 +11,60 @@ import {
   TbArrowsShuffle,
   TbChecklist,
   TbHourglass,
+  TbDeviceDesktop,
+  TbShieldCheck,
+  TbNetwork,
+  TbUxCircle,
+  TbAffiliate,
+  TbPhone,
+  TbAntenna,
+  TbBrandFlutter,
+  TbBrandHtml5,
+  TbBrandCss3,
+  TbBrandJavascript,
+  TbBrandReact,
+  TbBrandNodejs,
+  TbBrandPhp,
+  TbBrandPython,
+  TbBrandGit,
+  TbTerminal,
+  TbBrandWindows,
+  TbBrandApple,
+  TbBrandDocker,
+  TbBrandPowershell,
+  TbDeviceDesktopAnalytics,
+  TbServer,
+  TbWifi,
+  TbRouter,
+  TbTopologyStar3,
+  TbAntennaBars5,
+  TbDeviceTv,
+  TbPhoneCall,
+  TbPalette,
+  TbLayout,
+  TbLetterC,
+  TbSignal4G,
+  TbBrandFigma,
+  TbBrandAndroid,
+  TbBrandGoogle,
+  TbPackage,
+  TbBrandDebian,
+  TbWaveSine,
+  TbPrismLight,
 } from 'react-icons/tb';
 import BottomSheet from './UI/BottomSheet';
 import { TbDownload } from 'react-icons/tb';
 
 const Competences = () => {
   const [openSheet, setOpenSheet] = useState(null);
+  const [selectedTech, setSelectedTech] = useState(null);
 
   const languages = [
     { id: 'uk', name: 'Ukrainien', note: 'Langue maternelle', level: 6 },
     { id: 'ru', name: 'Russe', note: 'Deuxième langue', level: 6 },
-    { id: 'fr', name: 'Français', note: 'B2 — Intermédiaire supérieur', level: 4 },
-    { id: 'en', name: 'Anglais', note: 'B2 — Intermédiaire supérieur', level: 4 },
-    { id: 'de', name: 'Allemand', note: 'A1 — Débutant', level: 1 },
+    { id: 'fr', name: 'Français', note: 'B2 - Intermédiaire supérieur', level: 4 },
+    { id: 'en', name: 'Anglais', note: 'B2 - Intermédiaire supérieur', level: 4 },
+    { id: 'de', name: 'Allemand', note: 'A1 - Débutant', level: 1 },
   ];
 
   const humaines = [
@@ -53,6 +94,102 @@ const Competences = () => {
     },
   ];
 
+  const techniques = [
+    {
+      id: 'uiux',
+      title: 'UI/UX',
+      description: 'Concevoir des interfaces utilisateur intuitives et esthétiques.',
+      icon: <TbUxCircle />,
+      obtained: 'Études en BUT R&T, projets personnels et pratiques régulières.',
+      skills: ['Design propriétaire', 'Figma', 'Material Design', 'Fluent Design', 'Human Interface'],
+    },
+    {
+      id: 'net',
+      title: 'Réseaux',
+      description: 'Configurer et analyser des infrastructures réseau.',
+      icon: <TbAffiliate />,
+      obtained: 'Travaux pratiques, projets et études de cas.',
+      skills: ['LAN', 'VLAN', 'DHCP', 'DNS', 'Wireshark', 'Routage', 'VPN', 'Wi-Fi'],
+    },
+    {
+      id: 'dev',
+      title: 'Développement',
+      description: 'Créer des applications web et mobiles fiables et maintenables.',
+      icon: <TbCode />,
+      obtained: 'Études en BUT R&T, projets personnels et pratiques régulières.',
+      skills: ['Dart', 'Flutter', 'HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'PHP', 'Python', 'C', 'Git'],
+    },
+    {
+      id: 'os',
+      title: 'Système',
+      description: 'Gérer et configurer différents systèmes d\'exploitation.',
+      icon: <TbDeviceDesktop />,
+      obtained: 'Cours, TP et projets sur divers OS.',
+      skills: ['Windows', 'Linux', 'macOS', 'Bash', 'PowerShell', 'Virtualisation', 'VirtualBox', 'Workstation', 'Docker'],
+    },
+    {
+      id: 'phone',
+      title: 'Téléphonie',
+      description: 'Comprendre les principes de base de la téléphonie.',
+      icon: <TbPhone />,
+      obtained: 'Cours théoriques et études de cas en BUT R&T.',
+      skills: ['SIP', 'VoIP', 'PBX', 'DECT'],
+    },
+    {
+      id: 'telecom',
+      title: 'Télécommunications',
+      description: 'Comprendre les principes de base des télécommunications.',
+      icon: <TbAntenna />,
+      obtained: 'Cours théoriques et études de cas en BUT R&T.',
+      skills: ['Signaux', 'Ethernet', 'Fibre optique', 'Radio', 'Télévision'],
+    },
+  ];
+
+  const skillIcons = {
+    'Design propriétaire': <TbPalette />,
+    Figma: <TbBrandFigma />,
+    'Material Design': <TbBrandGoogle />,
+    'Fluent Design': <TbBrandWindows />,
+    'Human Interface': <TbBrandApple />,
+    LAN: <TbNetwork />,
+    VLAN: <TbTopologyStar3 />,
+    DHCP: <TbServer />,
+    DNS: <TbServer />,
+    Wireshark: <TbPackage />,
+    Routage: <TbAffiliate />,
+    VPN: <TbShieldCheck />,
+    'Wi-Fi': <TbWifi />,
+    Dart: <TbBrandFlutter />,
+    Flutter: <TbBrandFlutter />,
+    HTML: <TbBrandHtml5 />,
+    CSS: <TbBrandCss3 />,
+    JavaScript: <TbBrandJavascript />,
+    React: <TbBrandReact />,
+    'Node.js': <TbBrandNodejs />,
+    PHP: <TbBrandPhp />,
+    Python: <TbBrandPython />,
+    C: <TbLetterC />,
+    Git: <TbBrandGit />,
+    Windows: <TbBrandWindows />,
+    Linux: <TbBrandDebian />,
+    macOS: <TbBrandApple />,
+    Bash: <TbTerminal />,
+    PowerShell: <TbBrandPowershell />,
+    Virtualisation: <TbDeviceDesktopAnalytics />,
+    VirtualBox: <TbDeviceDesktop />,
+    Workstation: <TbDeviceDesktop />,
+    Docker: <TbBrandDocker />,
+    SIP: <TbPhoneCall />,
+    VoIP: <TbPhoneCall />,
+    PBX: <TbPhone />,
+    DECT: <TbPhone />,
+    Signaux: <TbWaveSine />,
+    Ethernet: <TbNetwork />,
+    'Fibre optique': <TbPrismLight />,
+    Radio: <TbAntenna />,
+    Télévision: <TbDeviceTv />,
+  };
+
   const diplomas = [
     {
       id: 1,
@@ -72,7 +209,14 @@ const Competences = () => {
 
   const openLanguages = () => setOpenSheet('langues');
   const openHumaines = () => setOpenSheet('humaines');
+  const openTechniques = () => setOpenSheet('techniques');
   const closeSheet = () => setOpenSheet(null);
+
+  const handleOpenTech = (tech) => {
+    setSelectedTech(tech);
+  };
+
+  const handleCloseTech = () => setSelectedTech(null);
 
   return (
     <Section padding="lg" id="competences">
@@ -99,6 +243,7 @@ const Competences = () => {
                 logo={<TbSettingsCog />}
                 title="Techniques"
                 subtitle="Savoir faire"
+                onClick={openTechniques}
               />
               <Banner
                 logo={<TbLanguage />}
@@ -183,6 +328,51 @@ const Competences = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </BottomSheet>
+      )}
+      {openSheet === 'techniques' && (
+        <BottomSheet isOpen={true} onClose={closeSheet} title="Compétences Techniques">
+          <div className="tech-block">
+            {techniques.map((tech) => (
+              <button
+                key={tech.id}
+                type="button"
+                className="tech-item"
+                onClick={() => handleOpenTech(tech)}
+              >
+                <div className="tech-icon">{tech.icon}</div>
+                <div className="tech-content">
+                  <h3 className="tech-title">{tech.title}</h3>
+                  <p className="tech-description">{tech.description}</p>
+                </div>
+              </button>
+            ))}
+          </div>
+        </BottomSheet>
+      )}
+      {selectedTech && (
+        <BottomSheet isOpen={true} onClose={handleCloseTech} title={selectedTech.title}>
+          <div className="tech-detail">
+            <div className="tech-detail-left">
+              <h3 className="tech-detail-heading">Comment c'est obtenu</h3>
+              <p className="tech-detail-text">{selectedTech.obtained}</p>
+            </div>
+            <div className="tech-detail-right">
+              <h3 className="tech-detail-heading">Compétences</h3>
+              <ul className="tech-skill-list">
+                {selectedTech.skills.map((skill) => (
+                  <li key={skill} className="tech-skill-row">
+                    <span className="tech-skill-icon">
+                      {skillIcons[skill] || <TbCode />}
+                    </span>
+                    <div className="tech-skill-item">
+                      <span className="tech-skill-label">{skill}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </BottomSheet>
       )}
