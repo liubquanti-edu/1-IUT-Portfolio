@@ -34,6 +34,10 @@ const About = () => {
             </Text>
 
             <Text variant="body" color="secondary" size="md">
+              Dans le cadre de mes études, je prévois d'effectuer un stage en avril 2027 dans une entreprise spécialisée dans l'administration des réseaux informatiques, ce qui me permettra de mettre en pratique mes compétences.
+            </Text>
+
+            <Text variant="body" color="secondary" size="md">
               Mon objectif est de rester polyvalent dans le domaine informatique, afin de pouvoir m’adapter à différents environnements techniques et professionnels.
             </Text>
           </div>

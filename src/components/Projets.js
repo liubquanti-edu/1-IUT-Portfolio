@@ -81,7 +81,7 @@ const Projets = () => {
           id: 'net-1',
           title: 'Projet Intégratif',
           summary: 'Projet technique visant à valider les compétences acquises au cours de la première année de formation BUT Réseaux et Télécommunications.',
-          image: 'assets/images/hat.png',
+          image: 'assets/images/projects/integratif.jpg',
           tags: [
             { id: 'sec', label: 'Sécurité', icon: <TbShieldCheck /> },
             { id: 'perf', label: 'Perf', icon: <TbBolt /> },
