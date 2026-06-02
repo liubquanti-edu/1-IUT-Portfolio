@@ -198,13 +198,13 @@ const Divers = () => {
               <Banner
                 logo={<TbMoodSmile />}
                 title="Passe-temps"
-                subtitle="Loisirs, activités créatives"
+                subtitle="Sujets d'étude et passions"
                 onClick={() => setSheetOpen('passtemps')}
               />
               <Banner
                 logo={<TbStar />}
                 title="Intérêts"
-                subtitle="Sujets d'étude et passions"
+                subtitle="Loisirs et divertissements"
                 onClick={() => setSheetOpen('interets')}
               />
             </div>
