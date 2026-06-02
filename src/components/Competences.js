@@ -95,7 +95,7 @@ const Competences = () => {
       title: 'UI/UX',
       description: 'Concevoir des interfaces utilisateur intuitives et esthétiques.',
       icon: <TbUxCircle />,
-      obtained: 'Études en BUT R&T, projets personnels et pratiques régulières.',
+      obtained: 'Autodidacte, utilisation de ressources en ligne et pratique constante dans le domaine grâce à la réalisation de mes propres projets.',
       skills: ['Design propriétaire', 'Figma', 'Material Design', 'Fluent Design', 'Human Interface'],
     },
     {
@@ -103,7 +103,7 @@ const Competences = () => {
       title: 'Réseaux',
       description: 'Configurer et analyser des infrastructures réseau.',
       icon: <TbAffiliate />,
-      obtained: 'Travaux pratiques, projets et études de cas.',
+      obtained: 'Formation au BUT Réseaux et Télécommunications.',
       skills: ['LAN', 'VLAN', 'DHCP', 'DNS', 'Wireshark', 'Routage', 'VPN', 'Wi-Fi'],
     },
     {
@@ -111,7 +111,7 @@ const Competences = () => {
       title: 'Développement',
       description: 'Créer des applications web et mobiles fiables et maintenables.',
       icon: <TbCode />,
-      obtained: 'Études en BUT R&T, projets personnels et pratiques régulières.',
+      obtained: 'Formation au BTS Développement de logiciels et au BUT Réseaux et Télécommunications, ainsi que la réalisation de projets personnels.',
       skills: ['Dart', 'Flutter', 'HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'PHP', 'Python', 'C', 'Git'],
     },
     {
@@ -119,7 +119,7 @@ const Competences = () => {
       title: 'Système',
       description: 'Gérer et configurer différents systèmes d\'exploitation.',
       icon: <TbDeviceDesktop />,
-      obtained: 'Cours, TP et projets sur divers OS.',
+      obtained: 'Formation au BUT Réseaux et Télécommunications, et travaux de recherche personnels.',
       skills: ['Windows', 'Linux', 'macOS', 'Bash', 'PowerShell', 'Virtualisation', 'VirtualBox', 'Workstation', 'Docker'],
     },
     {
@@ -127,7 +127,7 @@ const Competences = () => {
       title: 'Téléphonie',
       description: 'Comprendre les principes de base de la téléphonie.',
       icon: <TbPhone />,
-      obtained: 'Cours théoriques et études de cas en BUT R&T.',
+      obtained: 'Formation au BUT Réseaux et Télécommunications.',
       skills: ['SIP', 'VoIP', 'PBX', 'DECT'],
     },
     {
@@ -135,7 +135,7 @@ const Competences = () => {
       title: 'Télécommunications',
       description: 'Comprendre les principes de base des télécommunications.',
       icon: <TbAntenna />,
-      obtained: 'Cours théoriques et études de cas en BUT R&T.',
+      obtained: 'Formation au BUT Réseaux et Télécommunications.',
       skills: ['Signaux', 'Ethernet', 'Fibre optique', 'Radio', 'Télévision'],
     },
   ];
