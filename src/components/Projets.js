@@ -20,6 +20,8 @@ import {
   TbDeviceGamepad2,
   TbScript,
   TbDeviceMobile,
+  TbDeviceDesktop,
+  TbBrandPhp,
 } from 'react-icons/tb';
 import BottomSheet from './UI/BottomSheet';
 
@@ -154,6 +156,34 @@ const Projets = () => {
           objective: 'Il faut créer un script pour Tampermonkey, une extension qui permet d\'exécuter des scripts personnalisés directement dans le navigateur, capable de calculer automatiquement les notes moyennes de compétences à partir des notes obtenues et de les afficher directement dans le navigateur.',
           work: 'J\'ai créé un script qui calcule automatiquement les notes moyennes pour chaque compétence à partir des notes obtenues dans les matières et de leurs coefficients, ce qui permet aux étudiants de toujours savoir quelle note ils ont pour chaque compétence.',
           result: 'J\'ai acquis des compétences en matière de création de scripts personnalisés pour les navigateurs et j\'ai perfectionné mes compétences en JavaScript.',
+        },
+        {
+          id: 'code-5',
+          title: 'Plateforme d\'évaluation des compétences',
+          summary: 'Application web permettant de publier des programmes d\'études et de valider les compétences des étudiants à l\'aide de tests.',
+          image: 'assets/images/projects/php-sae.png',
+          tags: [
+            { id: 'web', label: 'Web', icon: <TbDeviceDesktop/>},
+            { id: 'php', label: 'PHP', icon: <TbBrandPhp /> },
+          ],
+          context: 'Dans le cadre du programme de formation en développement web de la faculté BUT Réseaux et Télécommunications, il est nécessaire de réaliser un projet consistant à créer une plateforme web pédagogique.',
+          objective: 'Il est nécessaire de créer une plateforme web pédagogique qui utilise la technologie des sites dynamiques et communique avec une base de données. Il est nécessaire de mettre en place plusieurs rôles de compte, un système d\'authentification et un système de sessions.',
+          work: 'J\'ai développé un site web dynamique en PHP qui communique avec une base de données SQL, intègre différents rôles, un système de sessions et des fonctionnalités pédagogiques, telles que la passation de tests par les étudiants, la publication de supports pédagogiques par les enseignants, etc.',
+          result: 'J\'ai perfectionné mes compétences en matière de développement de sites web dynamiques avec PHP et de gestion de bases de données SQL.',
+        },
+        {
+          id: 'code-6',
+          title: 'Plateforme de rapports de test',
+          summary: 'Application web permettant de créer des rapports de test pour les systèmes informatiques.',
+          image: 'assets/images/projects/php-tp.png',
+          tags: [
+            { id: 'web', label: 'Web', icon: <TbDeviceDesktop/>},
+            { id: 'php', label: 'PHP', icon: <TbBrandPhp /> },
+          ],
+          context: 'Le programme de formation en développement web de la faculté BUT Réseaux et Télécommunications comprend un stage dont l\'objectif est de créer une plateforme web permettant de générer et de stocker des rapports de test de systèmes informatiques.',
+          objective: 'Il est nécessaire de développer une plateforme web permettant de saisir des informations sur le système testé, ses caractéristiques et les résultats des tests ; il est également nécessaire de mettre en place un système d\'authentification et de gestion des sessions.',
+          work: 'J\'ai développé un site web dynamique en PHP qui communique avec une base de données SQL et dispose d\'un système de sécurité comprenant une authentification et des sessions, ce qui permet de créer et de stocker en toute sécurité des rapports de test de systèmes informatiques.',
+          result: 'J\'ai perfectionné mes compétences en matière de développement de sites web dynamiques avec PHP et de gestion de bases de données SQL.',
         },
       ],
     },
